@@ -15,16 +15,16 @@ import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
 import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.webp';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
-import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
+// import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
 import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
 import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
-import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
+import porfolioImage5 from '../images/portfolio/portfolio-5.png';
 import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
-import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
-import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
-import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
-import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
-import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
+// import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
+// import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
+// import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
+// import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
+// import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
@@ -109,12 +109,12 @@ Proven ability to deliver projects on time and within budget, both independently
 
  I have the motivation to learn new technologies and skills, and to self-develop as a Software Engineer. I always want to be part of a hardworking, creative, and understanding team that shares the same vision and goals.`,
   aboutItems: [
-    { label: 'Location', text: 'Turkey, Istanbul', Icon: MapIcon },
-    { label: 'Age', text: '32', Icon: CalendarIcon },
-    { label: 'Nationality', text: 'Syrian', Icon: FlagIcon },
-    { label: 'Interests', text: 'Reading, Zomba, Yoga', Icon: SparklesIcon },
-    { label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon },
-    { label: 'Employment', text: 'Alemi, IT Services and IT Consulting.', Icon: BuildingOffice2Icon },
+    {label: 'Location', text: 'Turkey, Istanbul', Icon: MapIcon},
+    {label: 'Age', text: '32', Icon: CalendarIcon},
+    {label: 'Nationality', text: 'Syrian', Icon: FlagIcon},
+    {label: 'Interests', text: 'Reading, Zomba, Yoga', Icon: SparklesIcon},
+    {label: 'Study', text: 'University of Damascus', Icon: AcademicCapIcon},
+    {label: 'Employment', text: 'Alemi, IT Services and IT Consulting.', Icon: BuildingOffice2Icon},
   ],
 };
 
@@ -349,9 +349,9 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  { label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx' },
-  { label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker' },
-  { label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/' },
-  { label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/' },
-  { label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx' },
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/alaasanteha'},
+  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/16721333/alaa-snteha'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/alaa-snteha'},
+  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/alaa.santeha/'},
+  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/AlaaSanteha'},
 ];
