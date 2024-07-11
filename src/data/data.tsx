@@ -14,17 +14,13 @@ import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
 import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.webp';
-import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
-// import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
-import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
-import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
-import porfolioImage5 from '../images/portfolio/portfolio-5.png';
+import porfolioImage1 from '../images/portfolio/portfolio-1.png';
+import porfolioImage2 from '../images/portfolio/portfolio-1.png';
+import porfolioImage3 from '../images/portfolio/portfolio-3.png';
+import porfolioImage5 from '../images/portfolio/portfolio-1.png';
+import porfolioImage4 from '../images/portfolio/portfolio-4.png';
 import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
-// import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
-// import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
-// import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
-// import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
-// import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
+
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
@@ -184,6 +180,12 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
+    title: 'AlifBee Academy',
+    description: 'Technologies: React • RESTful API • Responsive Design • React Hooks • Bootstrap 5',
+    url: 'https://academy.alifbee.com/',
+    image: porfolioImage3,
+  },
+  {
     title: 'AlifBee Web App',
     description: 'It is a web application for teaching the Arabic language to non-native speakers with professional and enjoyable ways which has shown great success around the world .',
     url: 'https://app.alifbee.com',
@@ -193,13 +195,7 @@ export const portfolioItems: PortfolioItem[] = [
     title: 'AlifBee Landing Page',
     description: 'I focused on this project to have perfect performance and SEO-friendly',
     url: 'https://www.alifbee.com',
-    image: porfolioImage1,
-  },
-  {
-    title: 'AlifBee Academy',
-    description: 'Technologies: React • RESTful API • Responsive Design • React Hooks • Bootstrap 5',
-    url: 'https://academy.alifbee.com/',
-    image: porfolioImage3,
+    image: porfolioImage2,
   },
   {
     title: 'AlifBee Kids Landing page',
@@ -211,6 +207,12 @@ export const portfolioItems: PortfolioItem[] = [
     title: 'AlifBee LMS',
     description: 'Building web applications to manage the content of the entire curriculums for more than one language and educational institution using Laravel framework which follows the Model-View-Controller (MVC).',
     url: 'https://lms.alifbee.com/',
+    image: porfolioImage5,
+  },
+  {
+    title: 'AlifBee Blog',
+    description: '',
+    url: 'http://blog.alifbee.com/',
     image: porfolioImage5,
   },
   {
