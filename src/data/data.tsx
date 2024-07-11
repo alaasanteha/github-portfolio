@@ -15,12 +15,9 @@ import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
 import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.webp';
 import porfolioImage1 from '../images/portfolio/portfolio-1.png';
-import porfolioImage2 from '../images/portfolio/portfolio-1.png';
 import porfolioImage3 from '../images/portfolio/portfolio-3.png';
-import porfolioImage5 from '../images/portfolio/portfolio-1.png';
 import porfolioImage4 from '../images/portfolio/portfolio-4.png';
 import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
-
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
@@ -195,7 +192,7 @@ export const portfolioItems: PortfolioItem[] = [
     title: 'AlifBee Landing Page',
     description: 'I focused on this project to have perfect performance and SEO-friendly',
     url: 'https://www.alifbee.com',
-    image: porfolioImage2,
+    image: porfolioImage1,
   },
   {
     title: 'AlifBee Kids Landing page',
@@ -207,13 +204,13 @@ export const portfolioItems: PortfolioItem[] = [
     title: 'AlifBee LMS',
     description: 'Building web applications to manage the content of the entire curriculums for more than one language and educational institution using Laravel framework which follows the Model-View-Controller (MVC).',
     url: 'https://lms.alifbee.com/',
-    image: porfolioImage5,
+    image: porfolioImage1,
   },
   {
     title: 'AlifBee Blog',
     description: '',
     url: 'http://blog.alifbee.com/',
-    image: porfolioImage5,
+    image: porfolioImage1,
   },
   {
     title: 'Premium Surplus',
