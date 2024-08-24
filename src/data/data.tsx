@@ -9,10 +9,10 @@ import {
 } from '@heroicons/react/24/outline';
 
 import GithubIcon from '../components/Icon/GithubIcon';
-import InstagramIcon from '../components/Icon/InstagramIcon';
+// import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
-import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
-import TwitterIcon from '../components/Icon/TwitterIcon';
+// import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
+// import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.webp';
 import porfolioImage1 from '../images/portfolio/portfolio-1.png';
 import porfolioImage3 from '../images/portfolio/portfolio-3.png';
@@ -52,7 +52,7 @@ export const SectionId = {
   Resume: 'resume',
   Skills: 'skills',
   Stats: 'stats',
-  Testimonials: 'testimonials',
+  Testimonials: 'Recommendations',
 } as const;
 
 export type SectionId = (typeof SectionId)[keyof typeof SectionId];
@@ -67,7 +67,7 @@ export const heroData: Hero = {
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         I'm a <strong className="text-stone-100"> Software Engineer</strong>, currently working
-        as a  <strong className="text-stone-100">Front End Developer</strong> with 4+ years of experience building and maintaining high-quality, responsive web applications for different domains, such as e-commerce, education, and health care.
+        as a  <strong className="text-stone-100">Front End Developer</strong> with 3+ years of experience building and maintaining high-quality, responsive web applications for different domains, such as e-commerce, education, and health care.
       </p>
       {/* <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
@@ -96,7 +96,7 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Front-End developer with 4+ years of experience building and maintaining high-quality, responsive web applications for different domains, such as e-commerce, education, and health care. 
+  description: `Front-End developer with 3+ years of experience building and maintaining high-quality, responsive web applications for different domains, such as e-commerce, education, and health care. 
 
 Proven ability to deliver projects on time and within budget, both independently and collaboratively. Proficient in JavaScript, TypeScript, React Js, Next Js, Laravel, PHP. Hands-on experience with Agile development methodologies and a proven ability to translate complex business requirements into user-friendly digital interfaces.
 
@@ -116,7 +116,63 @@ Proven ability to deliver projects on time and within budget, both independently
  */
 export const skills: SkillGroup[] = [
   {
-    name: 'Spoken languages',
+    name: '',
+    skills: [
+      {
+        name: 'Javascript',
+        level: 6,
+      },
+      {
+        name: 'React.js',
+        level: 6,
+      },
+      {
+        name: 'Next.js',
+        level: 5,
+      },
+      {
+        name: 'Typescript',
+        level: 5,
+      }, 
+      {
+        name: 'HTML, CSS',
+        level: 9,
+      },   
+    ],
+  },
+  {
+    name: '',
+    skills: [
+      {
+        name: 'Bootstrap',
+        level: 9,
+      },
+      {
+        name: 'PHP',
+        level: 4,
+      },
+      {
+        name: 'Laravel',
+        level: 4,
+      },    
+      {
+        name: 'Material UI',
+        level: 5,
+      },
+      {
+        name: 'Git, Jira',
+        level: 6,
+      },
+    ],
+  },
+];
+
+/**
+ * Skills section
+ */
+export const languages: SkillGroup[] = [
+  {
+    name: '',
     skills: [
       {
         name: 'Arabic',
@@ -124,49 +180,19 @@ export const skills: SkillGroup[] = [
       },
       {
         name: 'English',
-        level: 8,
+        level: 6,
+      },   
+      {
+        name: 'Turkish',
+        level: 4,
       },
       {
         name: 'French',
-        level: 2,
+        level: 1,
       },
       {
-        name: 'Turkish',
-        level: 6,
-      },
-    ],
-  },
-  {
-    name: 'Frontend development',
-    skills: [
-      {
-        name: 'React',
-        level: 8,
-      },
-      {
-        name: 'Next.js',
-        level: 8,
-      },
-      {
-        name: 'Typescript',
-        level: 6,
-      },
-      {
-        name: 'Javascript',
-        level: 8,
-      },
-    ],
-  },
-  {
-    name: 'Backend development',
-    skills: [
-      {
-        name: 'Python',
-        level: 3,
-      },
-      {
-        name: 'Node.js',
-        level: 2,
+        name: 'German',
+        level: 1,
       },
     ],
   },
@@ -212,12 +238,12 @@ export const portfolioItems: PortfolioItem[] = [
     url: 'http://blog.alifbee.com/',
     image: porfolioImage1,
   },
-  {
-    title: 'Premium Surplus',
-    description: 'I worked on this project as a freelancer. Technologies: Next.js • Material-UI • HTML/CSS • RESTful API • MVC',
-    url: 'https://psurplus.com/',
-    image: porfolioImage6,
-  },
+  // {
+  //   title: 'Premium Surplus',
+  //   description: 'I worked on this project as a freelancer. Technologies: Next.js • Material-UI • HTML/CSS • RESTful API • MVC',
+  //   url: 'https://psurplus.com/',
+  //   image: porfolioImage6,
+  // },
 ];
 
 /**
@@ -227,9 +253,11 @@ export const education: TimelineItem[] = [
   {
     date: 'February 2017',
     location: 'Damascus University',
-    title: 'Bachelor degree in Computer And Programming Engineering',
+    title: 'Bachelor degree in Information Technology Engineering',
     content: <p></p>,
   },
+];
+export const certificates: TimelineItem[] = [
   {
     date: 'February 2017',
     location: 'Coursera.org',
@@ -248,7 +276,7 @@ export const experience: TimelineItem[] = [
   {
     date: 'Dec 2019 - Dec 2023',
     location: 'AlifBee Company',
-    title: 'Front-end Engineer',
+    title: 'Junior Full Stack Web Developer',
     content: (
       <p>
         I worked with the team on many web applications and there were many challenges and the team had a
@@ -262,7 +290,7 @@ export const experience: TimelineItem[] = [
   {
     date: 'Jan 2018 – Apr 2018 ',
     location: 'Al Manara Soft',
-    title: 'Junior Software Programmer',
+    title: 'Intern Full Stack Software Engineer',
     content: (
       <p>
         Building web applications that support different industries such as e-commerce and personal websites
@@ -272,7 +300,7 @@ export const experience: TimelineItem[] = [
     ),
   },
   {
-    date: 'Feb 2019 – Dec 2022 ',
+    date: 'Jul 2020 – Oct 2022 ',
     location: 'Freelance',
     title: 'Web Developer',
     content: (
@@ -331,11 +359,11 @@ export const contact: ContactSection = {
       text: 'Istanbul, Turkey',
       href: 'https://www.google.ca/maps/place/%C4%B0stanbul/@41.0054632,28.8473759,11z',
     },
-    {
-      type: ContactType.Instagram,
-      text: '@alaa.santeha',
-      href: 'https://www.instagram.com/alaa.santeha/',
-    },
+    // {
+    //   type: ContactType.Instagram,
+    //   text: '@alaa.santeha',
+    //   href: 'https://www.instagram.com/alaa.santeha/',
+    // },
     {
       type: ContactType.Github,
       text: 'alaasanteha',
@@ -349,8 +377,8 @@ export const contact: ContactSection = {
  */
 export const socialLinks: Social[] = [
   {label: 'Github', Icon: GithubIcon, href: 'https://github.com/alaasanteha'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/16721333/alaa-snteha'},
+  // {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/16721333/alaa-snteha'},
   {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/alaa-snteha'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/alaa.santeha/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/AlaaSanteha'},
+  // {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/alaa.santeha/'},
+  // {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/AlaaSanteha'},
 ];
